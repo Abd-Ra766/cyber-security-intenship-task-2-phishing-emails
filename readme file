@@ -1,0 +1,83 @@
+# 📧 Phishing Email Analysis Report
+
+## 📝 Task Objective:
+Analyze a sample phishing email and identify key indicators such as spoofed addresses, suspicious links, urgent language, header issues, and grammar/spelling errors.
+
+---
+
+## 📨 Sample Email Analyzed
+
+**From:** support@paypalsecurity.com  
+**Subject:** Urgent! Account access suspended  
+
+> Dear Customer,  
+>  
+> Your PayPal account has been temporarily locked due to suspicious activity.  
+>  
+> Please click the link below to restore full access immediately:  
+> [http://restore-paypal-security.com/login]  
+>  
+> Failure to act in the next 12 hours will result in permanent suspension.  
+>  
+> Sincerely,  
+> PayPal Support
+
+---
+
+## 🚩 Phishing Indicators Found
+
+### 1. Spoofed Email Address  
+- The domain `@paypalsecurity.com` is **not legitimate**.
+- Real PayPal emails come from `@paypal.com`.
+
+### 2. Suspicious Link  
+- Hovering over the link shows it points to:  
+  `http://restore-paypal-security.com/login`  
+- Not an official PayPal URL → likely a phishing site.
+
+### 3. Urgency and Threatening Language  
+- “Account access suspended” and “permanent suspension in 12 hours”  
+- Used to pressure the user into acting quickly.
+
+### 4. Spelling and Grammar Errors  
+- Sentences are awkward and unprofessional, such as:
+  - “restore full access immediately”
+  - “Failure to act in the next 12 hours”
+
+### 5. Header Analysis Results (via MXToolbox)
+- **SPF:** Fail  
+- **DKIM:** Missing  
+- **Reply-To:** Address differs from sender  
+- Indicates potential **email spoofing** and misconfiguration
+
+---
+
+## 🧰 Tools Used
+
+- 🔍 [MXToolbox Email Header Analyzer](https://mxtoolbox.com/EmailHeaders.aspx)  
+- 🖱️ Link Hover Preview in Web Browser  
+- 🧠 Manual content analysis (grammar, urgency, formatting)
+
+---
+
+## ✅ Conclusion
+
+This email is a **classic phishing attempt**.  
+It shows:
+- A fake sender address  
+- A dangerous external link  
+- Fear-based language  
+- Failed email authentication checks
+
+Users should **not click on links or download attachments**, and should report such emails immediately.
+
+---
+
+## 📁 Submission Details
+
+- Repository Name: `Phishing-Email-Analysis`  
+- Submitted as part of: **Cyber Security Internship Task 2**  
+- [✔️ Submission Link (Google Form)](https://forms.gle/8Gm83s53KbyXs3Ne9)
+
+---
+
